@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media for Everyone</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'segoe UI', sans-serif;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: black;
+            padding: 20px;
+            background-image: url("cloud.jpeg");
+        }
+
+        header,
+        section,
+        article{
+            background-color: rosybrown;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+        }
+
+        h1,h2,h3,h4,h5,h6 {
+            border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+            padding-bottom: 5px;
+        }
+
+        p,li,td,th {
+            font-size: 1em;
+        }
+
+        a {
+            color: #1DA1F2;
+            text-decoration: none;
+        }
+
+        strong {
+            color: #ffd700;
+        }
+
+        i {
+            color: lightblue;
+        }
+
+        b {
+            color: coral;
+        }
+
+        del {
+            color: red;
+        }
+
+        ins {
+            color: lightgreen;
+        }
+
+        small {
+            font-size: 0.8em;
+            color: #ccc;
+        }
+
+        sub {
+            vertical-align: sub;
+            font-size: smaller;
+        }
+
+        ul,
+        ol {
+            margin-left: 20px;
+        }
+
+        img,
+        video {
+            max-width: 100%;
+            border-radius: 8px;
+            margin-top: 10px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid white;
+            padding: 10px;
+            text-align: left;
+        }
+
+        post {
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 15px;
+            margin-top: 10px;
+            border-left: 5px solid #1DA1F2;
+            border-radius: 5px;
+        }
+
+        /* ID selector */
+        #idselector {
+            background-color: rgba(0, 0, 0, 0.5);
+            border-left: 5px solid orange;
+            padding: 15px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Connection</h1>
+        <p>Your place to <strong>Connect</strong>, <i>share</i>, and <b>inspire</b>.</p>
+    </header>
+
+    <section>
+        <h2>What's new</h2>
+
+        <article class="post">
+            <h3>Porvi V H <small>poorvi@gmail.com</small></h3>
+            <p>Just finished my first <strong>coding bootcamp</strong>! <ins>#learning</ins> <del>#studying</del></p>
+            <img src="coding-bootcamp.avif" alt="Coding bootcamp">
+        </article>
+
+        <article class="post">
+            <h4>Raksha W <small>raksha@gmail.com</small></h4>
+            <p>Elephants Dream</p>
+            <video controls height="500" width="350" autoplay muted>
+                <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4"
+                    type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </article>
+    </section>
+
+    <section id="idselector">
+        <h5>Trending topics</h5>
+        <ul>
+            <li>Web3</li>
+            <li>Climate</li>
+            <li>OpenAI</li>
+        </ul>
+
+        <details>
+            <summary>More Trends</summary>
+            <ol>
+                <li>CyberSecurity</li>
+                <li>ARVR</li>
+                <li>OpenAI</li>
+            </ol>
+        </details>
+    </section>
+
+    <section>
+        <h6>
+            Friend Suggestions
+        </h6>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Username</th>
+                <th>Status</th>
+            </tr>
+            <tr>
+                <td>Jane Cooper</td>
+                <td>@janecoop</td>
+                <td>Online</td>
+            </tr>
+            <tr>
+                <td>Tom Hanks</td>
+                <td>@tomh</td>
+                <td>Offline</td>
+            </tr>
+        </table>
+    </section>
+
+    <section>
+        <h6>
+            Quick notes
+        </h6>
+        <p>Don't forget to <ins>verify your email</ins> and set up <del>@FA later</del> <strong>today</strong></p>
+    </section>
+
+    <section>
+        <h6>Footer Note</h6>
+        <p>CO<sub>2</sub> emissions are real — be mindful </p>
+    </section>
+
+</body>
+
+</html>
