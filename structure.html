@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(249, 248, 248);
+        }
+        #idselector{
+            color: blue;
+        }
+        .welcome{
+            color: yellow;
+            text-decoration: dashed;
+            text-transform: capitalize;
+        }
+        h1,h6,h7{
+            color: red;
+            text-decoration: underline;
+            text-transform: uppercase;
+            background-color: aqua;
+            font-size: 25px;
+        }
+        .model{
+            border: 5px solid royalblue;
+            margin: 10px 20px 30px 40px;
+            padding: 10px 40px;
+            background-color: chartreuse;
+        }
+        .box{
+            border: 3px solid greenyellow;
+            height: 350px;
+            width: 320px;
+            padding: 20px;
+            background-color: aquamarine;
+        }
+        .inner-box{
+            border: 3px solid red;
+            height: 200px;
+            width: 200px;
+            margin: auto;
+            padding: 30px 40px;
+            background-color: yellow;
+        }
+        div ~ p{
+            color: red;
+        }
+        div p{
+            color: rgb(190, 18, 199);
+        }
+        
+    </style>
+</head>
+<body>
+    <h1 class="Welcome" id="idselector" >Welcome to CSS</h1>
+    <h6>Heading 6</h6>
+    <h7>Heading 7</h7>
+    <div class="model"> CSS box model</div>
+    <div class="box" >Welcome
+        <div class="inner-box">To class</div>
+    </div>
+    <div>
+        <p>
+            A Web class can represent functionalities related to the internet, such as connecting to a website, sending requests, or fetching data online.
+        </p>
+        <p>
+            The `Web` class can be used to simulate web-based operations like loading pages, rendering content, or handling user interactions on a website.
+        </p>
+        <span>
+            <p>HTML</p>
+            <p>CSS</p>
+        </span>
+    </div>
+    <p>
+        A web development class
+    </p>
+</body>
+</html>
