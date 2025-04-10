@@ -5,187 +5,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RCB</title>
-    <style>
-        .content {
-            margin-left: 170px;
-            padding: 20px;
-        }
-
-        .fixed {
-            border: 2px solid green;
-            text-align: center;
-            margin-bottom: 10px;
-        }
-
-        .relative {
-            border: 2px solid green;
-            text-align: center;
-            margin-bottom: 10px;
-        }
-
-        .virat,
-        .devdutt,
-        .rajat,
-        .salt,
-        .jitesh,
-        .swastik,
-        .liam,
-        .krunal,
-        .swapnil,
-        .tim,
-        .romario,
-        .manoj,
-        .jacob {
-            position: absolute;
-            left: 20px;
-            padding: 3px 6px;
-            color: black;
-        }
-
-        .virat {
-            top: 30px;
-        }
-
-        .devdutt {
-            top: 80px;
-        }
-
-        .rajat {
-            top: 130px;
-        }
-
-        .salt {
-            top: 180px;
-        }
-
-        .jitesh {
-            top: 230px;
-        }
-
-        .swastik {
-            top: 280px;
-        }
-
-        .liam {
-            top: 330px;
-        }
-
-        .krunal {
-            top: 380px;
-            ;
-        }
-
-        .swapnil {
-            top: 430px;
-        }
-
-        .tim {
-            top: 480px;
-        }
-
-        .romario {
-            top: 530px;
-        }
-
-        .manoj {
-            top: 580px;
-        }
-
-        .jacob {
-            top: 630px;
-        }
-
-        .imgrelative {
-            position: relative;
-            display: inline-block;
-            width: 650px;
-            height: auto;
-
-        }
-
-        .imgrelative img.main {
-            width: 650px;
-            height: auto;
-            display: block;
-        }
-
-        .sidebar {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 160px;
-            height: 100%;
-            background-color: #004d00;
-            padding-top: 20px;
-        }
-
-        .sidebar a {
-            display: block;
-            color: white;
-            padding: 12px;
-            text-decoration: none;
-            font-size: 18px;
-        }
-
-        .sidebar a:hover {
-            background-color: gray;
-        }
-
-        .player {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            width: 100px;
-            font-size: 12px;
-            font-weight: bold;
-            color: black;
-        }
-
-        .player img {
-            width: 100px;
-            height: 100px;
-            object-fit: cover;
-        }
-
-        .player span {
-            padding: 2px 6px;
-            border-radius: 5px;
-            margin-top: 4px;
-        }
-
-        .square-img {
-            border-radius: 0 !important;
-        }
-
-        .player-row {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            /* 3 columns */
-            grid-template-rows: repeat(4, 1fr);
-            /* 4 rows */
-            gap: 10px;
-            padding: 20px;
-            box-sizing: border-box;
-            justify-items: center;
-            align-items: center;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
+
     <div class="sidebar">
         <a href="https://www.facebook.com" target="_blank">Home</a>
         <a href="https://www.instagram.com" target="_blank">About</a>
-        <a href="#">Contact</a>
-        <a href="#">Gallery</a>
-        <a href="#">More</a>
+        <a>Contact</a>
+        <a>Gallery</a>
+        <a class="dropdown">More
+                <div class="dropdown-content">
+                    <div>Inheritance</div>
+                    <div>Abstraction</div>
+                </div>
+            </a>        
     </div>
+   
 
     <div class="content">
         <div class="fixed">IPL Team</div>
@@ -196,51 +34,51 @@
 
             <div class="player-row">
                 <div class="player">
-                    <img src="virat.webp" alt="Virat" />
+                    <img class="virat-img" src="virat.webp" alt="Virat" />
                     <span>Virat Kohli</span>
                 </div>
                 <div class="player">
-                    <img src="devdutt.jpeg" alt="Devdutt" />
+                    <img class="devdutt-img" src="devdutt.jpeg" alt="Devdutt" />
                     <span>Devdutt Padikkal</span>
                 </div>
                 <div class="player">
-                    <img src="rajat.jpeg" alt="Rajat">
+                    <img class="rajat-img" src="rajat.jpeg" alt="Rajat">
                     <span>Rajat Patidar</span>
                 </div>
                 <div class="player">
-                    <img src="salt.jpeg" alt="Salt">
+                    <img class="salt-img" src="salt.jpeg" alt="Salt">
                     <span>Phil Salt</span>
                 </div>
                 <div class="player">
-                    <img src="jitesh.jpeg" alt="Jitesh">
+                    <img class="jitesh-img" src="jitesh.jpeg" alt="Jitesh">
                     <span>Jitesh Sharma</span>
                 </div>
                 <div class="player">
-                    <img src="swastik.jpeg" alt="Swastik">
+                    <img class="swastik-img" src="swastik.jpeg" alt="Swastik">
                     <span>Swastik Chhikara</span>
                 </div>
                 <div class="player">
-                    <img src="liam.jpeg" alt="Liam">
+                    <img class="liam-img" src="liam.jpeg" alt="Liam">
                     <span>Liam Livingstone</span>
                 </div>
                 <div class="player">
-                    <img src="krunal.jpeg" alt="Krunal">
+                    <img class="krunal-img" src="krunal.jpeg" alt="Krunal">
                     <span>Krunal Pandya</span>
                 </div>
                 <div class="player">
-                    <img src="swapnil.jpeg" alt="Swapnil">
+                    <img class="swapnil-img" src="swapnil.jpeg" alt="Swapnil">
                     <span>Swapnil Singh</span>
                 </div>
                 <div class="player">
-                    <img src="tim.jpeg" alt="Tim">
+                    <img class="tim-img" src="tim.jpeg" alt="Tim">
                     <span>Tim Southee</span>
                 </div>
                 <div class="player">
-                    <img src="romario.jpeg" alt="Romario">
+                    <img class="romario-img" src="romario.jpeg" alt="Romario">
                     <span>Romario Shepherd</span>
                 </div>
                 <div class="player">
-                    <img src="manoj.jpeg" alt="Manoj">
+                    <img class="manoj-img" src="manoj.jpeg" alt="Manoj">
                     <span>Manoj Bhandage</span>
                 </div>
             </div>
