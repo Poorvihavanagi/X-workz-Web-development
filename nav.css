@@ -1,0 +1,52 @@
+.navClass {
+    background-color: rgb(79, 75, 75);
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.navClass ul {
+    padding: 0;
+    margin: 0;
+}
+
+.navClass ul li {
+    list-style: none;
+    padding: 10px 15px;
+    display: inline-block;
+}
+
+.navClass ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.navClass ul li a:hover {
+    background-color: plum;
+    color: black;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+#searchId input {
+    padding: 5px 10px 5px 30px; 
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.search-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.search-container i {
+    position: absolute;
+    left: 10px;
+    color: #888;
+    font-size: 14px;
+}
+
